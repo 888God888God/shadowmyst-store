@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShadowMyst Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #111;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .upi {
+            font-size: 1.3em;
+            color: #00ffcc;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 30px;
+            padding: 15px 25px;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            background-color: #00ffcc;
+            color: #000;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+    <script>
+        function showButton() {
+            setTimeout(() => {
+                document.getElementById('downloadBtn').style.display = 'inline-block';
+            }, 30000); // 30 seconds
+        }
+    </script>
+</head>
+<body onload="showButton()">
+    <div class="container">
+        <h1>Welcome to ShadowMyst</h1>
+        <p>To receive your secret drop, please send ₹49 to the UPI ID below:</p>
+        <div class="upi"><strong>swayamgupta0106@okicici</strong></div>
+        <p>After sending the payment, wait 30 seconds.</p>
+        <button id="downloadBtn" onclick="window.location.href='https://example.com/mystery-file.zip'">Download Now</button>
+    </div>
+</body>
+</html>
